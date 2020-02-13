@@ -54,31 +54,30 @@ D. ![](%E6%9F%90%E7%A8%8B%E5%BA%8F%E5%91%98%E7%BB%99%E5%AA%B3%E5%A6%87%E5%AE%9A%
 ```cpp
 class GuoTao {
 public:
-    virtual void 聪明()；
+    virtual void 聪明();
 ···
-}
+};
 
 class Myj {
 private:
     virtual void 好看() {
         cout << "我怎么这么好看。。。"
     }
-...
-}
+};
 
-class GuoGuo : public GuoTao, Myj {
+class GuoGuo : public GuoTao, public Myj {
 public:
     void 聪明();
     void 好看();
-}
+};
 ```
 A. 只继承GuoTao的聪明()
 
 B. 继承GuoTao的聪明()，继承Myj的好看()
 
-C. 只重载GuoTao的聪明()
+C. 只重写GuoTao的聪明()
 
-D. 重载GuoGuo的聪明()，重载Myj的好看()
+D. 重写GuoGuo的聪明()，重写Myj的好看()
 
 **题目7** 请将下列程序补充完整
 ```cpp
@@ -171,11 +170,12 @@ C. O(log(N))
 D. O(N²)
 
 **题目12** 选择现阶段不属于GuoGuo类的方法()
+
 A. sayLoveMama()
 
 B. sayMianGanGan()
 
-C. sayGouGouMing()
+C. sayGoGoMing()
 
 D. sayLoveGuoGuo()
 
@@ -190,7 +190,7 @@ it Myj::pong() {
 }
 ```
 
-A. "cua腻那"
+A. "cua腻那" (庆阳方言，等价于东北的"干哈")
 
 B. "小弟"
 
